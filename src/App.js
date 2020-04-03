@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
-
 import MyPic from './images/mypic.jpg'
 
 class App extends Component {
@@ -10,6 +9,18 @@ class App extends Component {
   gitHub = ()=> {
     window.open("https://github.com/jmccaskey813");
   }
+  email = ()=> {
+    window.open("mailto:mccaskey316@gmail.com")
+  }
+
+  linkedin = () => {
+    window.open("https://www.linkedin.com/in/jacob-mccaskey-29b259147/")
+  }
+
+  resume = () => {
+   window.open("https://drive.google.com/open?id=1ES2s5B9yDr2F-5a2WhP7__gREqzFVenV")
+  }
+  
   render() { 
     return ( 
       <div className= "text-left">
@@ -21,9 +32,9 @@ class App extends Component {
       <span className="text-secondary">Software Developer</span>
       <div className="inline pb-2 pt-1">
         <button className="m-1 btn btn-primary" onClick = {()=>this.gitHub()} value="GitHub">github</button>
-        <button className="m-1 btn btn-primary">email</button>
-        <button className="m-1 btn btn-primary">resume</button>
-        <button className="m-1 btn btn-primary">linkedin</button>
+        <button className="m-1 btn btn-primary" onClick= {()=>this.email()}>email</button>
+        <button className="m-1 btn btn-primary" onClick={()=>this.resume()}>resume</button>
+        <button className="m-1 btn btn-primary" onClick={()=> this.linkedin()}>linkedin</button>
       </div>
       <p className="container-sm left-align"> 
         I am a full stack web developer. The best part about programming is that
