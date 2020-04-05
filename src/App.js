@@ -61,6 +61,10 @@ class App extends Component {
       </p>
       </div>
       <h3 className="pl-4 text-weight-bold">Some Things Im Proud Of:</h3>
+      <div className="container-sm border border-secondary mb-2">
+        <div className="container w-50 d-inline">Please come back later...</div>
+        <div className="container w-50 d-inline"></div>        
+      </div>
 
       </div>
      );
