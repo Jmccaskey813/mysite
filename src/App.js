@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
-import MyPic from './images/mypic.jpg'
+import MyPic from './images/mypic.jpg';
+import Projects from './projects';
+import SimpleReactLightbox from "simple-react-lightbox";
 
 class App extends Component {
   state = {  }
@@ -50,7 +52,7 @@ class App extends Component {
         Most of my projects of recently are written in React, but I have some experience in other
         frameworks like Vue. I have used Firebase extensively on the backend for many projects,
         as well as mongoDB. I am a huge fan of git, npm, & webpack, and frequently use Bootstrap
-        to style my pages. Dont be worried though, I get down with CSS too.
+        to style my pages. Dont be worried though, I can get down with CSS.
       </p>
       
       <p className="left-align container-sm">
@@ -60,11 +62,13 @@ class App extends Component {
         of my time coding though. 
       </p>
       </div>
-      <h3 className="pl-4 text-weight-bold">Some Things Im Proud Of:</h3>
-      <div className="container-sm border border-secondary mb-2">
-        <div className="container w-50 d-inline">Please come back later...</div>
-        <div className="container w-50 d-inline"></div>        
+      <h3 className="pl-4 text-weight-bold">Some Projects I've Been Working On:</h3>
+      <div className="container-sm mb-2">
+        <SimpleReactLightbox>
+        <Projects />
+        </SimpleReactLightbox>
       </div>
+     
 
       </div>
      );

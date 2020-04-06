@@ -55,3 +55,14 @@ a:hover {
   text-decoration: none;
 }
 
+.picture {
+  max-width: 500px;
+  height: auto;
+  position: relative;
+
+
+}
+
+.inline-display {
+  display: inline;
+}
